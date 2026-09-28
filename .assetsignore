@@ -1,0 +1,11 @@
+.git
+.gitignore
+.wrangler
+node_modules
+Docs
+src
+wrangler.jsonc
+.assetsignore
+zakaa_landing*.html
+_rmtest.txt
+*.md
