@@ -62,6 +62,12 @@ FAQ:
 - Where should a small business start? Start with a process that consumes time, creates delays, or hides useful information. A consultation helps identify a practical first use case.
 - Can ZAKAA guarantee a specific saving or forecast accuracy? Not before reviewing processes and data. ZAKAA agrees on measurable goals and validates results against real operating conditions.
 
+About ZAKAA (company profile): ZAKAA was founded with a clear vision to empower organizations and companies through comprehensive digital transformation, delivering integrated technology solutions that combine efficient software architecture with precise analytics and innovative intelligence.
+Our vision: To be the trusted, leading technology partner delivering software solutions and AI applications that advance business paths and make a real difference in information infrastructure and systems.
+Our mission: To bridge the gap between advanced technologies and real market needs through custom, creative, and simplified software systems and applications that empower organizations and individuals to lead their digital future with confidence and intelligence.
+What we do: (1) Software and application design and development - smart custom software and web applications tailored to each project's nature and scale. (2) Digital solutions and AI applications - integrating modern AI into work environments to automate tasks, raise productivity, and support decision-making. (3) Information systems foundation - building, structuring, and managing databases and information systems for flexible flow, fast retrieval, and top security standards. (4) Website and digital platform design - seamless, modern user experiences that reflect the client's identity and value. (5) Digital consulting and development - technology consulting for software infrastructure, data quality, and governance.
+Why choose ZAKAA: Truly custom solutions (no off-the-shelf ideas; every solution starts from a precise understanding of the client's needs). Flexibility and speed (modern methodologies, efficient delivery in the shortest time). Smart integration (AI is an intrinsic part of the software, not a cosmetic add-on, giving a sustainable competitive advantage).
+
 Contact: Consultations can be booked via WhatsApp (https://wa.me/201555558533) or by phone 02-01555558533. Email: Hello@Zakaa-AI.net or Support@Zakaa-AI.net. ZAKAA serves clients in English and Arabic and is based in Egypt.`;
 
 export default {
