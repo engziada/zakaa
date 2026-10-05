@@ -5,3 +5,5 @@ Thumbs.db
 desktop.ini
 og-cover_export/
 .wrangler/
+node_modules/
+*.log
