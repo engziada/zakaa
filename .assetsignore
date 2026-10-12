@@ -9,3 +9,10 @@ wrangler.jsonc
 zakaa_landing*.html
 _rmtest.txt
 *.md
+
+tests
+/.git/**
+/.wrangler/**
+/src/**
+/tests/**
+/node_modules/**

@@ -1,3 +1,5 @@
+import { projects } from "../assets/project-data.js";
+
 const MODEL = "@cf/meta/llama-3.1-8b-instruct-fp8";
 const RATE_LIMIT = 10;
 const RATE_WINDOW_MS = 5 * 60 * 1000;
@@ -36,6 +38,8 @@ function jsonResponse(body, status = 200) {
   });
 }
 
+const portfolioContent = projects.map((project) => `${project.name}: ${project.en}`).join("\n");
+
 const siteContent = `ZAKAA (Arabic: Zakaa) - "Intelligence, made useful."
 ZAKAA is an AI consultancy that builds custom AI solutions for growing businesses. Website: https://Zakaa-AI.net
 
@@ -67,6 +71,10 @@ Our vision: To be the trusted, leading technology partner delivering software so
 Our mission: To bridge the gap between advanced technologies and real market needs through custom, creative, and simplified software systems and applications that empower organizations and individuals to lead their digital future with confidence and intelligence.
 What we do: (1) Software and application design and development - smart custom software and web applications tailored to each project's nature and scale. (2) Digital solutions and AI applications - integrating modern AI into work environments to automate tasks, raise productivity, and support decision-making. (3) Information systems foundation - building, structuring, and managing databases and information systems for flexible flow, fast retrieval, and top security standards. (4) Website and digital platform design - seamless, modern user experiences that reflect the client's identity and value. (5) Digital consulting and development - technology consulting for software infrastructure, data quality, and governance.
 Why choose ZAKAA: Truly custom solutions (no off-the-shelf ideas; every solution starts from a precise understanding of the client's needs). Flexibility and speed (modern methodologies, efficient delivery in the shortest time). Smart integration (AI is an intrinsic part of the software, not a cosmetic add-on, giving a sustainable competitive advantage).
+
+Selected portfolio (availability varies; drawings are conceptual, not screenshots):
+${portfolioContent}
+Do not claim a project is launched, production-ready, certified, or available for purchase unless stated. EduFlow is a blueprint and prototypes; Masar and Souk El Kanto are in development.
 
 Contact: Consultations can be booked via WhatsApp (https://wa.me/201555558533) or by phone 02-01555558533. Email: Hello@Zakaa-AI.net or Support@Zakaa-AI.net. ZAKAA serves clients in English and Arabic and is based in Egypt.`;
 
