@@ -6,7 +6,7 @@ export function renderPortfolio(lang) {
   const target = document.getElementById('portfolio-content');
   const controls = document.getElementById('portfolio-controls');
   if (!target || !controls) return;
-  const items = projects;
+  const items = projects.filter(project => ![1, 5].includes(project.id));
   const ar = lang === 'ar';
   const labels = ar
     ? {'All':'الكل','Solution':'حلول برمجية','Tool / free service':'أدوات وخدمات','Website sample':'نماذج مواقع'}

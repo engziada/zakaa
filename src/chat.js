@@ -41,11 +41,11 @@ function jsonResponse(body, status = 200) {
 const portfolioContent = projects.map((project) => `${project.name}: ${project.en}`).join("\n");
 
 const siteContent = `ZAKAA (Arabic: Zakaa) - "Intelligence, made useful."
-ZAKAA is an AI consultancy that builds custom AI solutions for growing businesses. Website: https://Zakaa-AI.net
+ZAKAA provides business consulting, training, custom software and ready-made products. Website: https://Zakaa-AI.net
 
 Why we exist: The future of work is not more software, it is less friction. Growing businesses do not need another dashboard to babysit. They need their systems to talk, their repetitive work to disappear, and their information to become useful. ZAKAA designs the intelligence layer that makes it happen, shaped around the client's people and processes. Not another AI tool - a better way to work, built around your business.
 
-What we build (no boxes to fit into, only possibilities to build; every engagement starts with the client's workflow, not a product shelf):
+Custom solutions, tailored to the client's requirements:
 1. Workflow automation - connects scattered tools and removes repetitive handoffs so teams can focus on work that moves the business forward.
 2. Customer support - builds smarter support journeys that help customers faster and give the team the context to handle what matters.
 3. Reporting and insights - turns fragmented operational data into a clearer view of performance, opportunities, and what needs attention.
@@ -61,7 +61,7 @@ How we work (first understand, then make it work - no one-size-fits-all platform
 Proof over promises: ZAKAA is building its first public case studies. No invented metrics, no off-the-shelf demos presented as client work. The best example could be the one built together with you.
 
 FAQ:
-- Does ZAKAA sell ready-made AI products? No. ZAKAA designs and builds solutions around each business's needs, systems, and priorities.
+- Does ZAKAA sell ready-made products? Yes: ERP360 and WorkTracker. ERP360 modules can be customized to customer needs; new modules can also be developed and added even if not currently included. Custom-built solutions are a separate option.
 - Do clients need to replace existing tools? Not necessarily. ZAKAA starts by understanding what is already used and where integration or improvement makes the most sense.
 - Where should a small business start? Start with a process that consumes time, creates delays, or hides useful information. A consultation helps identify a practical first use case.
 - Can ZAKAA guarantee a specific saving or forecast accuracy? Not before reviewing processes and data. ZAKAA agrees on measurable goals and validates results against real operating conditions.
@@ -72,7 +72,10 @@ Our mission: To bridge the gap between advanced technologies and real market nee
 What we do: (1) Software and application design and development - smart custom software and web applications tailored to each project's nature and scale. (2) Digital solutions and AI applications - integrating modern AI into work environments to automate tasks, raise productivity, and support decision-making. (3) Information systems foundation - building, structuring, and managing databases and information systems for flexible flow, fast retrieval, and top security standards. (4) Website and digital platform design - seamless, modern user experiences that reflect the client's identity and value. (5) Digital consulting and development - technology consulting for software infrastructure, data quality, and governance.
 Why choose ZAKAA: Truly custom solutions (no off-the-shelf ideas; every solution starts from a precise understanding of the client's needs). Flexibility and speed (modern methodologies, efficient delivery in the shortest time). Smart integration (AI is an intrinsic part of the software, not a cosmetic add-on, giving a sustainable competitive advantage).
 
-Selected portfolio (availability varies; drawings are conceptual, not screenshots):
+Consulting: business improvement, crisis management and business continuity, alongside technology consulting.
+Training: AI, AI enablement, programming, soft skills, business continuity and crisis management. Tracks adapted for children, youth, professionals, managers and executives. Do not invent schedules, prices, certifications or age limits.
+Ready-made products: ERP360 (ERP 360) and WorkTracker. All other projects below are portfolio examples, not ready-made products offered for resale.
+Selected work (drawings are conceptual, not screenshots):
 ${portfolioContent}
 Do not claim a project is launched, production-ready, certified, or available for purchase unless stated. EduFlow is a blueprint and prototypes; Masar and Souk El Kanto are in development.
 

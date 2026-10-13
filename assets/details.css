@@ -78,3 +78,27 @@ html[dir='rtl'] .do-row h4, html[dir='rtl'] .why h4 { font-family: 'Tajawal', sa
   .service-icon img { height: 200px; }
   .profile-sub { margin-top: 42px; }
 }
+/* Consulting, learning and two clear software paths. */
+.offering-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; margin-bottom:32px; }
+.offering-card,.route-card,.product-card { border:1px solid #ffffff24; border-radius:20px; background:linear-gradient(145deg,#1a2026,#101418); overflow:hidden; }
+.offering-card { padding:0 26px 30px; }
+.offering-card>img { width:100%; height:190px; object-fit:contain; }
+.offering-card h3,.route-card h3,.product-card h3 { font:500 27px/1.35 'Space Grotesk','Tajawal',sans-serif; margin:12px 0 18px; }
+.offering-card p,.route-card p,.product-card p { color:var(--muted,#afb7bb); font-size:14px; line-height:1.9; }
+.solution-routes,.product-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin:32px 0; }
+.route-card { display:block; padding:34px; text-decoration:none; transition:border-color .25s,transform .25s; }
+.route-card:hover { border-color:#efad78; transform:translateY(-4px); }
+.route-index { color:var(--copper); font-size:12px; letter-spacing:.13em; }
+.offer-subtitle { font-size:22px; margin:54px 0 25px; }
+.product-card { display:flex; flex-direction:column; }
+.product-card>img { width:100%; height:250px; object-fit:contain; background:#10151a; }
+.product-copy { padding:30px; display:flex; flex:1; flex-direction:column; align-items:flex-start; }
+.product-copy h3 { font-size:36px; }
+.product-copy .btn { margin-top:auto; }
+.product-copy p { margin-bottom:24px; }
+.product-copy .product-note { border-inline-start:2px solid var(--copper); padding:12px 18px; background:#efad780a; color:#e8d6c5; }
+.do-row:nth-child(n) { grid-column:span 2; }
+.do-row:nth-child(n) .capability-art { height:210px; object-fit:contain; }
+@media(max-width:1050px){.offering-grid{grid-template-columns:1fr}.offering-card>img{height:160px}.do-row:nth-child(n){grid-column:span 3}}
+@media(max-width:720px){.solution-routes,.product-grid{grid-template-columns:1fr}.do-row:nth-child(n){grid-column:1}.route-card,.product-copy{padding:25px}.product-card>img{height:210px}}
+@media(prefers-reduced-motion:reduce){.route-card{transition:none}.route-card:hover{transform:none}}
