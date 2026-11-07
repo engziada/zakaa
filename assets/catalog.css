@@ -38,3 +38,5 @@ html[dir=rtl] .catalog-site .hero h1{font-family:'Tajawal',sans-serif;font-weigh
 .catalog-site .wordmark-ar{display:none}html[dir=rtl] .catalog-site .wordmark-en{display:none}html[dir=rtl] .catalog-site .wordmark-ar{display:block}
 @media(max-width:1100px){.catalog-site .navlinks{gap:12px}.catalog-site .navlinks a{font-size:12px}}
 @media(max-width:760px){html[dir=rtl] .catalog-site .hero h1{font-size:clamp(42px,10.8vw,58px)}}
+
+@media(max-width:760px){.about-hero{grid-template-columns:minmax(0,1fr);grid-template-areas:"label" "title" "lead";min-height:300px;row-gap:10px;padding-block:42px 36px}.about-hero::before{right:-8%;width:min(66vw,260px);opacity:.42}.about-hero::after{right:-10%;width:min(70vw,290px);height:min(42vw,170px);opacity:.6}html[dir=rtl] .about-hero{grid-template-areas:"label" "title" "lead"}html[dir=rtl] .about-hero::before{right:auto;left:-8%}html[dir=rtl] .about-hero::after{right:auto;left:-10%}}
