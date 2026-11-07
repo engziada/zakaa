@@ -47,3 +47,9 @@ html[dir=rtl] .catalog-site .hero h1{font-family:'Tajawal',sans-serif;font-weigh
 html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card{background:linear-gradient(145deg,#fff,#f6f0e8);border-color:var(--line)}
 html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card::before{background:radial-gradient(circle,#98522522,transparent 68%);opacity:.72}
 html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card::after{background:repeating-linear-gradient(135deg,transparent 0 13px,#9852250a 13.5px 14px)}
+
+/* Original feather ornament, layered over the ambient pillar texture. */
+.catalog-site:has(main > #home) .catalog-card .card-body::after{content:"";position:absolute;pointer-events:none;z-index:-1;width:128px;height:160px;bottom:-24px;inset-inline-end:-14px;background:url("./illustrations/feather.svg") center/contain no-repeat;opacity:.16;transform:rotate(-12deg);transition:opacity .45s,transform .65s}
+.catalog-site:has(main > #home) .catalog-card:is(:hover,:focus-within) .card-body::after{opacity:.3;transform:rotate(-6deg) translateY(-5px)}
+html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card .card-body::after{filter:brightness(.6);opacity:.24}
+html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card:is(:hover,:focus-within) .card-body::after{opacity:.36}
