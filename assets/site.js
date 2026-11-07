@@ -6,6 +6,7 @@
   function closeMenu() { links.classList.remove('open'); menu.setAttribute('aria-expanded','false'); }
   function setLanguage(lang) {
     root.lang = lang; root.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.querySelectorAll('[data-i18n],[data-i18n-html]').forEach(el => { const key=el.dataset.i18n||el.dataset.i18nHtml; const value=window.ZAKAA_RESTORED_COPY?.[lang]?.[key]; if(value!==undefined){if(el.dataset.i18nHtml)el.innerHTML=value;else el.textContent=value;} });
     document.querySelectorAll('[data-en][data-ar]').forEach(el => { el.textContent = el.dataset[lang]; });
     language.textContent = lang === 'ar' ? 'EN' : 'عربي';
     language.setAttribute('aria-label',lang === 'ar' ? 'Switch to English' : 'Switch to Arabic');
