@@ -16,3 +16,5 @@ tests
 /src/**
 /tests/**
 /node_modules/**
+
+/scripts/**

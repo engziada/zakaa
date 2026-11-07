@@ -40,46 +40,17 @@ function jsonResponse(body, status = 200) {
 
 const portfolioContent = projects.map((project) => `${project.name}: ${project.en}`).join("\n");
 
-const siteContent = `ZAKAA (Arabic: Zakaa) - "Intelligence, made useful."
-ZAKAA provides business consulting, training, custom software and ready-made products. Website: https://Zakaa-AI.net
-
-Why we exist: The future of work is not more software, it is less friction. Growing businesses do not need another dashboard to babysit. They need their systems to talk, their repetitive work to disappear, and their information to become useful. ZAKAA designs the intelligence layer that makes it happen, shaped around the client's people and processes. Not another AI tool - a better way to work, built around your business.
-
-Custom solutions, tailored to the client's requirements:
-1. Workflow automation - connects scattered tools and removes repetitive handoffs so teams can focus on work that moves the business forward.
-2. Customer support - builds smarter support journeys that help customers faster and give the team the context to handle what matters.
-3. Reporting and insights - turns fragmented operational data into a clearer view of performance, opportunities, and what needs attention.
-4. Forecasting - uses available data to explore what may come next, with practical forecasts designed to support better planning.
-
-The idea behind ZAKAA: Your business with a new layer of intelligence. Not a replacement for your team, an extension of what they can do. ZAKAA connects the information, tools, and decisions already inside the business, then builds the right intelligence around them.
-
-How we work (first understand, then make it work - no one-size-fits-all platform):
-1. Find the friction - map the work, the bottlenecks, and the outcomes worth improving.
-2. Design around you - shape a practical AI solution around existing people, data, and tools.
-3. Build, learn, improve - implement, validate with real workflows, and refine based on what works.
-
-Proof over promises: ZAKAA is building its first public case studies. No invented metrics, no off-the-shelf demos presented as client work. The best example could be the one built together with you.
-
-FAQ:
-- Does ZAKAA sell ready-made products? Yes: ERP360 and WorkTracker. ERP360 modules can be customized to customer needs; new modules can also be developed and added even if not currently included. Custom-built solutions are a separate option.
-- Do clients need to replace existing tools? Not necessarily. ZAKAA starts by understanding what is already used and where integration or improvement makes the most sense.
-- Where should a small business start? Start with a process that consumes time, creates delays, or hides useful information. A consultation helps identify a practical first use case.
-- Can ZAKAA guarantee a specific saving or forecast accuracy? Not before reviewing processes and data. ZAKAA agrees on measurable goals and validates results against real operating conditions.
-
-About ZAKAA (company profile): ZAKAA was founded with a clear vision to empower organizations and companies through comprehensive digital transformation, delivering integrated technology solutions that combine efficient software architecture with precise analytics and innovative intelligence.
-Our vision: To be the trusted, leading technology partner delivering software solutions and AI applications that advance business paths and make a real difference in information infrastructure and systems.
-Our mission: To bridge the gap between advanced technologies and real market needs through custom, creative, and simplified software systems and applications that empower organizations and individuals to lead their digital future with confidence and intelligence.
-What we do: (1) Software and application design and development - smart custom software and web applications tailored to each project's nature and scale. (2) Digital solutions and AI applications - integrating modern AI into work environments to automate tasks, raise productivity, and support decision-making. (3) Information systems foundation - building, structuring, and managing databases and information systems for flexible flow, fast retrieval, and top security standards. (4) Website and digital platform design - seamless, modern user experiences that reflect the client's identity and value. (5) Digital consulting and development - technology consulting for software infrastructure, data quality, and governance.
-Why choose ZAKAA: Truly custom solutions (no off-the-shelf ideas; every solution starts from a precise understanding of the client's needs). Flexibility and speed (modern methodologies, efficient delivery in the shortest time). Smart integration (AI is an intrinsic part of the software, not a cosmetic add-on, giving a sustainable competitive advantage).
-
-Consulting: business improvement, crisis management and business continuity, alongside technology consulting.
-Training: AI, AI enablement, programming, soft skills, business continuity and crisis management. Tracks adapted for children, youth, professionals, managers and executives. Do not invent schedules, prices, certifications or age limits.
-Ready-made products: ERP360 (ERP 360) and WorkTracker. All other projects below are portfolio examples, not ready-made products offered for resale.
-Selected work (drawings are conceptual, not screenshots):
+const siteContent = `Zaka2 / ذكاء. Website https://zakaa-ai.net.
+Services: AI and custom software; workflow automation, integrations, reporting and customer support; websites and e-commerce storefront design; business operations consulting, crisis management and business continuity.
+Products: ERP360, WorkTracker, YourSpace and Gathering. Configuration and implementation are scoped with the client. ERP360 supports customization and additional modules.
+Academy & Learning Experiences: AI workshops for educators/lecturers, children and youth; programming and AI training for adults, employees and executives; leadership and soft skills, crisis and continuity exercises. Learning experiences include Kids AI Academy, Little Explorer and Family Games.
+Community initiatives: Madinaty AI for residential communities groups its administration, life, kitchen and delivery portals. AutoStop is an in-development community carpool application, not a production-ready transport marketplace. Loqma / لقمة is a home-kitchen initiative: only its general concept is confirmed, do not invent operational features or launch readiness.
+Separate projects: Souk El Kanto and Masar are in development; EduFlow is a blueprint and prototypes. These are not part of the ready-made product catalogue.
+Current catalogue details:
 ${portfolioContent}
-Do not claim a project is launched, production-ready, certified, or available for purchase unless stated. EduFlow is a blueprint and prototypes; Masar and Souk El Kanto are in development.
-
-Contact: Consultations can be booked via WhatsApp (https://wa.me/201026655008) or by phone +20 102 665 5008. Email: Hello@Zakaa-AI.net or Support@Zakaa-AI.net. ZAKAA serves clients in English and Arabic and is based in Egypt.`;
+Contact by phone or WhatsApp: +201026655008, https://wa.me/201026655008. Email: Hello@Zakaa-AI.net or Support@Zakaa-AI.net.
+Serving Cairo including Madinaty, Al Rehab, Nasr City, Heliopolis, Shorouk City and Mohandessin. Do not invent prices, schedules, locations, client results or availability. Direct visitors to the team to confirm them.
+`;
 
 export default {
   async fetch(request, env) {
