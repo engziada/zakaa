@@ -79,7 +79,7 @@ Selected work (drawings are conceptual, not screenshots):
 ${portfolioContent}
 Do not claim a project is launched, production-ready, certified, or available for purchase unless stated. EduFlow is a blueprint and prototypes; Masar and Souk El Kanto are in development.
 
-Contact: Consultations can be booked via WhatsApp (https://wa.me/201555558533) or by phone 02-01555558533. Email: Hello@Zakaa-AI.net or Support@Zakaa-AI.net. ZAKAA serves clients in English and Arabic and is based in Egypt.`;
+Contact: Consultations can be booked via WhatsApp (https://wa.me/201026655008) or by phone +20 102 665 5008. Email: Hello@Zakaa-AI.net or Support@Zakaa-AI.net. ZAKAA serves clients in English and Arabic and is based in Egypt.`;
 
 export default {
   async fetch(request, env) {
