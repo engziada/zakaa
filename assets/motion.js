@@ -50,11 +50,11 @@
   function paint() {
     context.clearRect(0, 0, width, height);
     const scale = Math.min(width, height) * .59;
-    const angle = clock * .000075;
-    const tilt = .65 + pointer.y * .08;
+    const angle = clock * .000075 + pointer.x * .14;
+    const tilt = .65 + pointer.y * .22;
     const cos = Math.cos(angle), sin = Math.sin(angle);
     const ct = Math.cos(tilt), st = Math.sin(tilt);
-    const roll = -.38 + pointer.x * .06;
+    const roll = -.38 + pointer.x * .16;
     const cr = Math.cos(roll), sr = Math.sin(roll);
     const projected = particles.map(p => {
       const x = p.x * cos - p.z * sin;
@@ -76,7 +76,7 @@
   function draw(time) {
     frame = 0;
     if (stopped() || document.hidden || !visible) {lastTime = 0;return;}
-    if (time - previous >= 32) {
+    if (time - previous >= 16) {
       if (lastTime) clock += Math.min(time - lastTime, 64);
       lastTime = time; previous = time;
       paint();
@@ -105,10 +105,10 @@
       art.addEventListener('pointermove', e => {
         if (stopped()) return;
         const r = art.getBoundingClientRect();
-        pointer.x = (e.clientX - r.left) / r.width - .5;
-        pointer.y = (e.clientY - r.top) / r.height - .5;
-        art.style.setProperty('--logo-x', `${pointer.x * 10}px`);
-        art.style.setProperty('--logo-y', `${pointer.y * 10}px`);
+        pointer.x = ((e.clientX - r.left) / r.width - .5) * 2;
+        pointer.y = ((e.clientY - r.top) / r.height - .5) * 2;
+        art.style.setProperty('--logo-x', `${pointer.x * 28}px`);
+        art.style.setProperty('--logo-y', `${pointer.y * 28}px`);
       }, {passive:true});
       art.addEventListener('pointerleave', () => {
         pointer.x = pointer.y = 0;
