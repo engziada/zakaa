@@ -93,7 +93,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .profile h2 strong { color: var(--copper); font-weight: 400; }
 .profile-intro p { color: #b2b1b3; font-size: 15px; line-height: 1.9; }
 .vm-grid { gap: 22px; }
-.vm { border: 1px solid var(--line); border-radius: 16px; padding: 30px; background: #ffffff02; }
+.vm { position: relative; isolation: isolate; overflow: hidden; border: 1px solid #efad7833; border-radius: 16px; padding: 30px; background: radial-gradient(ellipse at 100% 0%, #efad7815, transparent 58%), linear-gradient(145deg, #191b1f, #101216 76%); box-shadow: inset 0 1px #ffffff08; }
+.vm::before { content: ''; position: absolute; z-index: -1; inset: -25% -18% auto auto; width: 70%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #efad782d, transparent 68%); filter: blur(15px); opacity: .7; pointer-events: none; animation: pillar-glow 9s ease-in-out infinite alternate; }
+.vm::after { content: ''; position: absolute; z-index: -1; inset: 0; pointer-events: none; background: repeating-linear-gradient(135deg, transparent 0 13px, #efad7807 13.5px 14px); mask-image: linear-gradient(135deg, #000, transparent 66%); }
+@keyframes pillar-glow { to { transform: translate(-12%, 9%) scale(1.12); opacity: .38; } }
 .vm p { color: #cdcbcb; font: 400 21px/1.65 'Space Grotesk', 'Tajawal', sans-serif; }
 .do-row { border-color: var(--line); }
 .do-row .num { color: var(--copper); font-family: 'Space Grotesk', sans-serif; font-size: 20px; }
