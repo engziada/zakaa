@@ -200,6 +200,22 @@
   }
   sync();
 
+  // About Hero Astrolabe 3D Parallax
+  const aboutHero = document.querySelector('.about-hero');
+  const astrolabe = document.querySelector('.astrolabe-mechanism');
+  if (aboutHero && astrolabe && matchMedia('(pointer: fine)').matches) {
+    aboutHero.addEventListener('pointermove', e => {
+      if (stopped()) return;
+      const r = aboutHero.getBoundingClientRect();
+      const px = ((e.clientX - r.left) / r.width - 0.5) * 2;
+      const py = ((e.clientY - r.top) / r.height - 0.5) * 2;
+      astrolabe.style.transform = `perspective(900px) rotateY(${px * 22}deg) rotateX(${-py * 22}deg) scale(1.03)`;
+    }, {passive:true});
+    aboutHero.addEventListener('pointerleave', () => {
+      astrolabe.style.transform = 'perspective(900px) rotateY(0deg) rotateX(0deg) scale(1)';
+    });
+  }
+
   const reveal = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
@@ -207,7 +223,7 @@
       reveal.unobserve(entry.target);
     });
   }, {threshold:.12});
-  document.querySelectorAll('.section-head, .service, .step, .proof-note, .contact-card, .catalog-card').forEach(el => reveal.observe(el));
+  document.querySelectorAll('.section-head, .service, .step, .proof-note, .contact-card, .catalog-card, .bento-card, .phase-card, .spec-box').forEach(el => reveal.observe(el));
 
   let scrollFrame = 0;
   const line = document.querySelector('.zakaa-scroll-line');

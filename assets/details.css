@@ -11,8 +11,44 @@ html[dir='rtl'] .wordmark-ar { display: block; }
 html[dir='rtl'] .brand { min-width: 110px; align-items: center; }
 .footer .brand { align-items: flex-start; }
 .vm, .service, .why, .proof-note, .contact-card, .do-row { position: relative; isolation: isolate; overflow: hidden; }
-.vm::after, .service::after, .why::after, .proof-note::after, .contact-card::after, .do-row::after { content: ''; position: absolute; pointer-events: none; z-index: -1; width: 128px; height: 160px; bottom: -24px; inset-inline-end: -14px; background: url('./illustrations/feather.svg') center/contain no-repeat; opacity: .16; transform: rotate(-12deg); transition: opacity .45s, transform .65s; }
-.vm:hover::after, .service:hover::after, .why:hover::after, .do-row:hover::after { opacity: .3; transform: rotate(-6deg) translateY(-5px); }
+.vm::after, .service::after, .why::after, .proof-note::after, .contact-card::after, .do-row::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  width: 140px;
+  height: 175px;
+  bottom: -20px;
+  inset-inline-end: -10px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: .18;
+  transform: rotate(-10deg) scale(.95);
+  transition: opacity .45s cubic-bezier(0.16, 1, 0.3, 1), transform .65s cubic-bezier(0.16, 1, 0.3, 1), filter .45s ease;
+}
+
+/* Cultural Glyphs for About & Details Sections */
+.vm:nth-child(1)::after { background-image: url("./glyphs/hiero-djed.svg"); } /* Djed: Vision & Architectural Backbone */
+.vm:nth-child(2)::after { background-image: url("./glyphs/arabic-zakaa.svg"); } /* Dhal: Mission & Wisdom */
+.why:nth-child(1)::after { background-image: url("./glyphs/hiero-wadjet.svg"); } /* Wadjet: Insight & Custom Solutions */
+.why:nth-child(2)::after { background-image: url("./glyphs/ai-astrolabe.svg"); } /* Astrolabe: Speed & Adaptability */
+.why:nth-child(3)::after { background-image: url("./glyphs/ai-neural.svg"); } /* Neural: Smart Integration */
+.service:nth-child(odd)::after { background-image: url("./glyphs/arabic-khatam.svg"); }
+.service:nth-child(even)::after { background-image: url("./glyphs/ai-quantum.svg"); }
+.contact-card::after { background-image: url("./glyphs/hiero-ankh.svg"); }
+.proof-note::after { background-image: url("./glyphs/arabic-noon.svg"); }
+.do-row:nth-child(1)::after { background-image: url("./glyphs/hiero-djed.svg"); }
+.do-row:nth-child(2)::after { background-image: url("./glyphs/ai-neural.svg"); }
+.do-row:nth-child(3)::after { background-image: url("./glyphs/arabic-khatam.svg"); }
+.do-row:nth-child(4)::after { background-image: url("./glyphs/ai-astrolabe.svg"); }
+.do-row:nth-child(5)::after { background-image: url("./glyphs/hiero-wadjet.svg"); }
+
+.vm:hover::after, .service:hover::after, .why:hover::after, .do-row:hover::after, .contact-card:hover::after {
+  opacity: .38;
+  transform: rotate(-3deg) scale(1.12);
+  filter: drop-shadow(0 0 16px rgba(229, 178, 93, 0.45));
+}
 .profile-sub { margin: 64px 0 27px; }
 .do-list { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; counter-reset: capability; }
 .do-row { display: flex; flex-direction: column; grid-column: span 2; gap: 0; padding: 0 25px 28px; border: 1px solid #ffffff21; border-radius: 18px; background: linear-gradient(150deg, #1b1d20, #111518); transition: border-color .3s, transform .3s; }

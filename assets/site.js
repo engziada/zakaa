@@ -23,6 +23,27 @@
   menu.addEventListener('click',()=>{ const open = links.classList.toggle('open'); menu.setAttribute('aria-expanded',String(open)); });
   document.addEventListener('keydown',e=>{ if(e.key==='Escape' && links.classList.contains('open')){closeMenu();menu.focus();} });
   links.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu();});
+
+  // Interactive Bento Capability Switcher
+  const bentoTabs = document.querySelectorAll('.bento-tab');
+  const bentoCards = document.querySelectorAll('.bento-card');
+  if (bentoTabs.length && bentoCards.length) {
+    bentoTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        bentoTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const filter = tab.dataset.filter;
+        bentoCards.forEach(card => {
+          if (filter === 'all' || card.dataset.group === filter) {
+            card.classList.remove('is-hidden');
+          } else {
+            card.classList.add('is-hidden');
+          }
+        });
+      });
+    });
+  }
+
   let lang = navigator.language?.startsWith('ar') ? 'ar' : 'en';
   try { const saved=localStorage.getItem('zakaa-lang'); if(['en','ar'].includes(saved))lang=saved; } catch {}
   setLanguage(lang); document.getElementById('year').textContent=new Date().getFullYear();

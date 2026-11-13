@@ -48,8 +48,53 @@ html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card{backgroun
 html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card::before{background:radial-gradient(circle,#98522522,transparent 68%);opacity:.72}
 html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card::after{background:repeating-linear-gradient(135deg,transparent 0 13px,#9852250a 13.5px 14px)}
 
-/* Original feather ornament, layered over the ambient pillar texture. */
-.catalog-site:has(main > #home) .catalog-card .card-body::after{content:"";position:absolute;pointer-events:none;z-index:-1;width:128px;height:160px;bottom:-24px;inset-inline-end:-14px;background:url("./illustrations/feather.svg") center/contain no-repeat;opacity:.16;transform:rotate(-12deg);transition:opacity .45s,transform .65s}
-.catalog-site:has(main > #home) .catalog-card:is(:hover,:focus-within) .card-body::after{opacity:.3;transform:rotate(-6deg) translateY(-5px)}
-html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card .card-body::after{filter:brightness(.6);opacity:.24}
-html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card:is(:hover,:focus-within) .card-body::after{opacity:.36}
+/* Dynamic Cultural Glyphs (Sacred Arabic, Hieroglyphs, Astrolabe, AI Synapse) */
+.catalog-card .card-body::after,
+.catalog-site:has(main > #home) .catalog-card .card-body::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  width: 136px;
+  height: 168px;
+  bottom: -22px;
+  inset-inline-end: -12px;
+  background: url("./glyphs/arabic-zakaa.svg") center/contain no-repeat;
+  opacity: .18;
+  transform: rotate(-10deg) scale(.95);
+  transition: opacity .45s cubic-bezier(0.16, 1, 0.3, 1), transform .65s cubic-bezier(0.16, 1, 0.3, 1), filter .45s ease;
+}
+
+:is(.catalog-card):is([data-slug*="erp360"], :has(a[href*="erp360"])) .card-body::after { background-image: url("./glyphs/hiero-djed.svg"); }
+:is(.catalog-card):is([data-slug*="worktracker"], :has(a[href*="worktracker"])) .card-body::after { background-image: url("./glyphs/hiero-wadjet.svg"); }
+:is(.catalog-card):is([data-slug*="yourspace"], :has(a[href*="yourspace"])) .card-body::after { background-image: url("./glyphs/arabic-khatam.svg"); }
+:is(.catalog-card):is([data-slug*="gathering"], :has(a[href*="gathering"])) .card-body::after { background-image: url("./glyphs/hiero-ankh.svg"); }
+:is(.catalog-card):is([data-slug*="madinaty-ai"], :has(a[href*="madinaty-ai"])) .card-body::after { background-image: url("./glyphs/hiero-scarab.svg"); }
+:is(.catalog-card):is([data-slug*="ai-software"], :has(a[href*="ai-software"])) .card-body::after { background-image: url("./glyphs/ai-neural.svg"); }
+:is(.catalog-card):is([data-slug*="consulting"], :has(a[href*="consulting"])) .card-body::after { background-image: url("./glyphs/arabic-zakaa.svg"); }
+:is(.catalog-card):is([data-slug*="websites-ecommerce"], :has(a[href*="websites-ecommerce"])) .card-body::after { background-image: url("./glyphs/ai-quantum.svg"); }
+:is(.catalog-card):is([data-slug*="academy"], :has(a[href*="academy"])) .card-body::after { background-image: url("./glyphs/arabic-noon.svg"); }
+:is(.catalog-card):is([data-slug*="autostop"], :has(a[href*="autostop"])) .card-body::after { background-image: url("./glyphs/ai-astrolabe.svg"); }
+:is(.catalog-card):is([data-slug*="loqma"], :has(a[href*="loqma"])) .card-body::after { background-image: url("./glyphs/hiero-ankh.svg"); }
+:is(.catalog-card):is([data-slug*="souk-el-kanto"], :has(a[href*="souk-el-kanto"])) .card-body::after { background-image: url("./glyphs/arabic-khatam.svg"); }
+:is(.catalog-card):is([data-slug*="eduflow"], :has(a[href*="eduflow"])) .card-body::after { background-image: url("./glyphs/arabic-noon.svg"); }
+:is(.catalog-card):is([data-slug*="masar"], :has(a[href*="masar"])) .card-body::after { background-image: url("./glyphs/ai-astrolabe.svg"); }
+
+.catalog-card:is(:hover, :focus-within) .card-body::after,
+.catalog-site:has(main > #home) .catalog-card:is(:hover,:focus-within) .card-body::after {
+  opacity: .38;
+  transform: rotate(-3deg) scale(1.12);
+  filter: drop-shadow(0 0 16px rgba(229, 178, 93, 0.45));
+}
+
+html[data-theme="light"] .catalog-card .card-body::after,
+html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card .card-body::after {
+  filter: brightness(.7) sepia(.4);
+  opacity: .24;
+}
+
+html[data-theme="light"] .catalog-card:is(:hover, :focus-within) .card-body::after,
+html[data-theme="light"] .catalog-site:has(main > #home) .catalog-card:is(:hover,:focus-within) .card-body::after {
+  opacity: .42;
+  filter: brightness(.5) sepia(.8) drop-shadow(0 0 14px rgba(201, 147, 59, 0.4));
+}

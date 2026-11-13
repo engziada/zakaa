@@ -38,43 +38,43 @@ export const projects = [
     "id": 6,
     "name": "AutoStop",
     "group": "initiatives",
-    "en": "Community carpool coordination for residents sharing planned journeys. Status: In development. Drivers publish a route, departure window and available seats. Passengers find nearby routes, request a seat and coordinate pickup through trip chat. Designed around Madinaty. Ask about pilot availability and community collaboration.",
+    "en": "Community carpool coordination for residents sharing planned journeys. Offer planned routes and seats in advance. Connect drivers and passengers within residential communities. Support shared community transit patterns.",
     "ar": "تنسيق مشاركة الرحلات بين السكان أصحاب المسارات المتقاربة."
   },
   {
     "id": 7,
     "name": "Loqma · Home Kitchen",
     "group": "initiatives",
-    "en": "A home-kitchen initiative connecting community life with home-cooked food. A dedicated place in our community initiatives for home kitchens and their customers. Talk to us about the initiative, participation and the current scope.",
+    "en": "A home-kitchen initiative connecting community life with home-cooked food. Connect home kitchens with nearby residents. Support discovery, menus and direct coordination. Encourage neighborhood community exchange.",
     "ar": "مبادرة للمطابخ المنزلية تربط الحياة المجتمعية بالطعام المنزلي."
   },
   {
     "id": 8,
-    "name": "Souk El Kanto",
+    "name": "Souk El-Kanto",
     "group": "projects",
-    "en": "A marketplace project built around listings, offers and negotiated exchanges. Status: In development. Web and mobile marketplace experience. Buyer–seller offers, active negotiations and participant ratings.",
-    "ar": "مشروع سوق إلكتروني قائم على الإعلانات والعروض والتبادل بالتفاوض."
+    "en": "A modern platform for second-hand items, vintage fashion and unique finds. Status: Beta. Verified listings and clear item conditions. Search and discover across categories. Support circular economy and sustainable reuse.",
+    "ar": "منصة حديثة للمنتجات المستعملة والأزياء الكلاسيكية والقطع النادرة."
   },
   {
     "id": 9,
-    "name": "Masar",
+    "name": "Masar EV",
     "group": "projects",
-    "en": "A Cairo ride-hailing platform project for rider, driver and operations workflows. Status: In development. Rider and driver app integration with dispatch workflows. Fare and commission logic with a web operations console.",
-    "ar": "مشروع منصة رحلات للقاهرة يربط مسارات عمل الراكب والسائق والتشغيل."
+    "en": "A dedicated directory for electric-vehicle charging points and mobility services in Egypt. Status: In development. Find verified charging stations with socket types and operational status. Filter by route, speed and network provider. Contribute updates and new locations to support green mobility.",
+    "ar": "دليل متكامل لنقاط شحن المركبات الكهربائية وخدمات التنقل في مصر."
   },
   {
     "id": 10,
     "name": "EduFlow",
     "group": "projects",
-    "en": "A school-automation blueprint covering the everyday administration of Saudi schools. Status: Blueprint & prototypes. Admissions, attendance, timetables, approvals, transport and finance. Business requirements, data models and interface prototypes.",
-    "ar": "مخطط لأتمتة الإدارة اليومية للمدارس السعودية."
+    "en": "A modern school-management and student-journey platform built for bilingual schools in the MENA region. Status: In development. Admissions, student records, attendance and academic gradebooks in one interface. Parent and student web portals for transparent progress and communication. Automated timetable generation and Ministry-compliant reporting.",
+    "ar": "نظام حديث لإدارة المدارس ومتابعة مسار الطلاب مصمم للمدارس ثنائية اللغة في المنطقة."
   },
   {
     "id": 11,
-    "name": "AI & Custom Software",
+    "name": "AI & Intelligent Software",
     "group": "services",
-    "en": "Connect workflows, tools and data around the way your organization works. Workflow automation and integration with existing systems. Custom applications, customer support journeys and operational reporting. Start with one clear use case, agreed scope and measurable outcomes.",
-    "ar": "ربط سير العمل والأدوات والبيانات وفق طريقة عمل مؤسستك."
+    "en": "Custom AI models, process automation and intelligent software tailored to your workflows. Model integration: LLMs, document understanding, search and semantic recommendations. Custom applications, customer-facing workflows and operational reporting. Start with one clear use case, agreed scope and measurable outcomes.",
+    "ar": "نماذج ذكاء اصطناعي مخصصة وأتمتة العمليات وبرمجيات ذكية تناسب طريقة عملك."
   },
   {
     "id": 12,
