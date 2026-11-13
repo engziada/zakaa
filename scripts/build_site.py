@@ -217,7 +217,9 @@ methodology_block = block(
     ]) + '</div>'
 )
 
-home_body = hero + bento_section + methodology_block
+trust_block = f'''<section class="section profile" id="trust"><div class="wrap"><h3 class="eyebrow profile-sub" data-i18n="whyLabel">لماذا تختار ذكاء؟</h3><div class="why-grid"><div class="why"><img class="value-art" src="/assets/illustrations/custom.svg" alt="" loading="lazy" width="640" height="400"><span class="value-index" aria-hidden="true">01</span><h4 data-i18n="why1t">Truly custom solutions</h4><p data-i18n="why1d">No off-the-shelf ideas. We always start with a precise understanding of the client's problems and needs to build the most fitting solution.</p></div><div class="why"><img class="value-art" src="/assets/illustrations/agile.svg" alt="" loading="lazy" width="640" height="400"><span class="value-index" aria-hidden="true">02</span><h4 data-i18n="why2t">Flexibility &amp; speed</h4><p data-i18n="why2d">Modern working methodologies that let us execute and deliver projects with high efficiency, in the shortest time.</p></div><div class="why"><img class="value-art" src="/assets/illustrations/integrate.svg" alt="" loading="lazy" width="640" height="400"><span class="value-index" aria-hidden="true">03</span><h4 data-i18n="why3t">Smart integration</h4><p data-i18n="why3d">AI woven into the software as an intrinsic part, not a cosmetic add-on — giving your product a lasting competitive edge.</p></div></div></div></section>'''
+
+home_body = hero + trust_block + bento_section
 page('', 'AI, Software & Learning', 'الذكاء الاصطناعي والبرمجيات والتعلم', 'Zaka2: AI and software services, ERP360, WorkTracker, YourSpace, Gathering and programming training in Cairo.', 'ذكاء: خدمات الذكاء الاصطناعي والبرمجيات ومنتجات ERP360 وWorkTracker وYourSpace وGathering وتدريب البرمجة في القاهرة.', home_body)
 
 # ==============================================================================

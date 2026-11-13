@@ -1,6 +1,6 @@
 /* Same-origin Workers AI chat. Responses are rendered as text, never HTML. */
 (() => {
-  const toggle = document.getElementById('zakaa-chat-toggle');
+  const toggle = document.getElementById('zakaa-chat-toggle') || document.querySelector('.assistant-link');
   if (!toggle) return;
   const text = {
     en: {title:'Zaka2 assistant',sub:'AI guidance · Human expertise',open:'Ask Zaka2',close:'Close chat',greeting:'Hello. Tell me what you want to improve, or ask about our services and projects.',placeholder:'What could work better?',send:'Send',typing:'Thinking…',label:'Your message',human:'Talk to our team ↗',services:'What can you build?',projects:'Tell me about your projects',consult:'How do I book a consultation?',error:'We could not connect. Please try again or contact our team.',rate:'Please wait a few minutes before sending another message.',timeout:'The reply took too long. Please try again.',retry:'Retry',notice:'AI assistant. Please avoid sharing sensitive information.'},

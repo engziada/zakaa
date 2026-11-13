@@ -25,6 +25,11 @@
   --max: 1440px;
   --radius: 8px; /* Monumental architectural bevel */
   --radius-sm: 4px;
+
+  /* Typography - Neo-Alexandrian font stack */
+  --font-base: 'Space Grotesk', 'Manrope', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Space Grotesk', 'Tajawal', sans-serif;
+  --font-arabic: 'Tajawal', sans-serif;
 }
 
 html { background: var(--paper); }
