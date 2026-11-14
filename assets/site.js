@@ -44,7 +44,8 @@
     });
   }
 
-  let lang = 'ar';
-  try { const saved=localStorage.getItem('zakaa-lang'); if(['en','ar'].includes(saved))lang=saved; } catch {}
+  const hasLocalizedAlternate = Boolean(document.querySelector('link[rel="alternate"][hreflang="ar"]'));
+  let lang = hasLocalizedAlternate ? root.lang : 'ar';
+  try { if(!hasLocalizedAlternate){const saved=localStorage.getItem('zakaa-lang');if(['en','ar'].includes(saved))lang=saved;} } catch {}
   setLanguage(lang); document.getElementById('year').textContent=new Date().getFullYear();
 })();

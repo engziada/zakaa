@@ -1,2 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://zakaa-ai.net/</loc></url><url><loc>https://zakaa-ai.net/about</loc></url><url><loc>https://zakaa-ai.net/products</loc></url><url><loc>https://zakaa-ai.net/services</loc></url><url><loc>https://zakaa-ai.net/initiatives</loc></url><url><loc>https://zakaa-ai.net/projects</loc></url><url><loc>https://zakaa-ai.net/erp360</loc></url><url><loc>https://zakaa-ai.net/worktracker</loc></url><url><loc>https://zakaa-ai.net/yourspace</loc></url><url><loc>https://zakaa-ai.net/gathering</loc></url><url><loc>https://zakaa-ai.net/madinaty-ai</loc></url><url><loc>https://zakaa-ai.net/autostop</loc></url><url><loc>https://zakaa-ai.net/loqma</loc></url><url><loc>https://zakaa-ai.net/souk-el-kanto</loc></url><url><loc>https://zakaa-ai.net/masar</loc></url><url><loc>https://zakaa-ai.net/eduflow</loc></url><url><loc>https://zakaa-ai.net/ai-software</loc></url><url><loc>https://zakaa-ai.net/websites-ecommerce</loc></url><url><loc>https://zakaa-ai.net/consulting</loc></url><url><loc>https://zakaa-ai.net/academy</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://zakaa-ai.net/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zakaa-ai.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zakaa-ai.net/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zakaa-ai.net/"/>
+  </url>
+  <url>
+    <loc>https://zakaa-ai.net/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zakaa-ai.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zakaa-ai.net/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zakaa-ai.net/"/>
+  </url>
+  <url><loc>https://zakaa-ai.net/about</loc></url>
+  <url><loc>https://zakaa-ai.net/products</loc></url>
+  <url><loc>https://zakaa-ai.net/services</loc></url>
+  <url><loc>https://zakaa-ai.net/initiatives</loc></url>
+  <url><loc>https://zakaa-ai.net/projects</loc></url>
+  <url>
+    <loc>https://zakaa-ai.net/erp360</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zakaa-ai.net/erp360"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zakaa-ai.net/ar/erp360"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zakaa-ai.net/erp360"/>
+  </url>
+  <url>
+    <loc>https://zakaa-ai.net/ar/erp360</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zakaa-ai.net/erp360"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zakaa-ai.net/ar/erp360"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zakaa-ai.net/erp360"/>
+  </url>
+  <url><loc>https://zakaa-ai.net/worktracker</loc></url>
+  <url><loc>https://zakaa-ai.net/yourspace</loc></url>
+  <url><loc>https://zakaa-ai.net/gathering</loc></url>
+  <url><loc>https://zakaa-ai.net/madinaty-ai</loc></url>
+  <url><loc>https://zakaa-ai.net/autostop</loc></url>
+  <url><loc>https://zakaa-ai.net/loqma</loc></url>
+  <url><loc>https://zakaa-ai.net/souk-el-kanto</loc></url>
+  <url><loc>https://zakaa-ai.net/masar</loc></url>
+  <url><loc>https://zakaa-ai.net/eduflow</loc></url>
+  <url>
+    <loc>https://zakaa-ai.net/ai-software</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zakaa-ai.net/ai-software"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zakaa-ai.net/ar/ai-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zakaa-ai.net/ai-software"/>
+  </url>
+  <url>
+    <loc>https://zakaa-ai.net/ar/ai-software</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zakaa-ai.net/ai-software"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zakaa-ai.net/ar/ai-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zakaa-ai.net/ai-software"/>
+  </url>
+  <url><loc>https://zakaa-ai.net/websites-ecommerce</loc></url>
+  <url><loc>https://zakaa-ai.net/consulting</loc></url>
+  <url>
+    <loc>https://zakaa-ai.net/academy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zakaa-ai.net/academy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zakaa-ai.net/ar/academy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zakaa-ai.net/academy"/>
+  </url>
+  <url>
+    <loc>https://zakaa-ai.net/ar/academy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zakaa-ai.net/academy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zakaa-ai.net/ar/academy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zakaa-ai.net/academy"/>
+  </url>
+</urlset>
