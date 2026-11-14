@@ -31,8 +31,21 @@ test('caps input and history and enforces a rate limit',async()=>{
   assert.equal((await chat.fetch(request({message:'Hi'},{'CF-Connecting-IP':'rate-test'}),env)).status,429);
 });
 test('worker sends chat requests to the handler, while static pages use assets',async()=>{
-  const env={ASSETS:{fetch:async()=>new Response('asset')}};
+  const assetRequests=[];
+  const env={ASSETS:{fetch:async request=>{assetRequests.push(request);return new Response('asset');}}};
   assert.equal((await worker.fetch(new Request('https://example.com/api/chat'),env)).status,405);
   assert.equal(await (await worker.fetch(new Request('https://example.com/'),env)).text(),'asset');
+  assert.equal(new URL(assetRequests.at(-1).url).pathname,'/index.html');
+  assert.equal((await worker.fetch(new Request('https://example.com/ar/'),env)).status,301);
+  const arabicHomeRedirect=await worker.fetch(new Request('https://example.com/ar?utm_source=test'),env);
+  assert.equal(new URL(arabicHomeRedirect.headers.get('location')).pathname,'/');
+  assert.equal(new URL(arabicHomeRedirect.headers.get('location')).search,'?utm_source=test');
+  await worker.fetch(new Request('https://example.com/en/'),env);
+  assert.equal(new URL(assetRequests.at(-1).url).pathname,'/en/index.html');
+  assert.equal(await (await worker.fetch(new Request('https://example.com/ar/academy'),env)).text(),'asset');
+  assert.equal(new URL(assetRequests.at(-1).url).pathname,'/ar/academy.html');
+  await worker.fetch(new Request('https://example.com/ar/academy/'),env);
+  assert.equal(new URL(assetRequests.at(-1).url).pathname,'/ar/academy.html');
+  assert.equal((await worker.fetch(new Request('https://example.com/ar/academy',{method:'POST'}),env)).status,405);
   assert.equal((await chat.fetch(new Request('https://example.com/api/chat',{method:'OPTIONS'}),{})).status,204);
 });
