@@ -3,11 +3,34 @@
   const menu = document.getElementById('menu-toggle');
   const links = document.getElementById('navlinks');
   const language = document.getElementById('lang-toggle');
+  const englishPaths = new Set(['/ai-software', '/erp360', '/academy']);
   function closeMenu() { links.classList.remove('open'); menu.setAttribute('aria-expanded','false'); }
   function setLanguage(lang) {
     root.lang = lang; root.dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.querySelectorAll('[data-i18n],[data-i18n-html]').forEach(el => { const key=el.dataset.i18n||el.dataset.i18nHtml; const value=window.ZAKAA_RESTORED_COPY?.[lang]?.[key]; if(value!==undefined){if(el.dataset.i18nHtml)el.innerHTML=value;else el.textContent=value;} });
     document.querySelectorAll('[data-en][data-ar]').forEach(el => { el.textContent = el.dataset[lang]; });
+    document.querySelectorAll('a[href]').forEach(el => {
+      if (el.classList.contains('lang')) return;
+      const href = el.getAttribute('href');
+      if (!href || !href.startsWith('/')) return;
+      const separator = href.search(/[?#]/);
+      const rawPath = separator < 0 ? href : href.slice(0, separator);
+      const suffix = separator < 0 ? '' : href.slice(separator);
+      const path = rawPath.replace(/\/+$/, '') || '/';
+      const englishPath = path.startsWith('/ar/') ? path.slice(3) : path;
+      if (!englishPaths.has(englishPath)) return;
+      el.setAttribute('href', `${lang === 'ar' ? `/ar${englishPath}` : englishPath}${suffix}`);
+    });
+    document.querySelectorAll('.brand, .navlinks a').forEach(el => {
+      if (el.getAttribute('href') === '/' || el.getAttribute('href') === '/en/') {
+        el.href = lang === 'en' ? '/en/' : '/';
+      }
+    });
+    document.querySelectorAll('.nav-cta').forEach(el => {
+      if (el.getAttribute('href') === '/#contact' || el.getAttribute('href') === '/en/#contact') {
+        el.href = lang === 'en' ? '/en/#contact' : '/#contact';
+      }
+    });
     language.textContent = lang === 'ar' ? 'EN' : 'عربي';
     language.setAttribute('aria-label',lang === 'ar' ? 'Switch to English' : 'Switch to Arabic');
     menu.setAttribute('aria-label',lang === 'ar' ? 'القائمة الرئيسية' : 'Main menu');
