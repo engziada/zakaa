@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="ar" dir="rtl" data-theme="dark">
 <head>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("zakaa-theme")==="light"?"light":"dark"}catch(e){document.documentElement.dataset.theme="dark"}try{localStorage.setItem("zakaa-lang","ar")}catch(e){}</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0c0907">
+<meta name="color-scheme" content="dark light">
 <meta name="description" content="ورش ودورات عملية في الذكاء الاصطناعي والبرمجة في القاهرة للمعلمين والأطفال والشباب والمهنيين وفرق العمل.">
 <link rel="canonical" href="https://zakaa-ai.net/ar/academy">
 <link rel="alternate" hreflang="en" href="https://zakaa-ai.net/academy">
@@ -21,7 +23,7 @@
 </head>
 <body class="catalog-site">
 <a class="skip" href="#main">تجاوز إلى المحتوى</a>
-<header class="header"><nav class="nav wrap" aria-label="التنقل الرئيسي"><a class="brand" href="/ar/" aria-label="ذكاء - الرئيسية">ذكاء</a><div class="navlinks" id="navlinks"><a href="/ar/">الرئيسية</a><a href="/ar/ai-software">الذكاء الاصطناعي والبرمجيات</a><a href="/ar/erp360">ERP360</a><a href="/ar/academy" aria-current="page">الأكاديمية</a></div><div class="nav-actions"><a class="lang" href="/academy" lang="en" hreflang="en">English</a><button class="menu" id="menu-toggle" type="button" aria-label="فتح القائمة" aria-controls="navlinks" aria-expanded="false">☰</button></div></nav></header>
+<header class="header"><nav class="nav wrap" aria-label="التنقل الرئيسي"><a class="brand" href="/" aria-label="ذكاء - الرئيسية"><span class="brand-art" aria-hidden="true"><svg class="wordmark wordmark-en" viewBox="190 598 680 260"><image href="/assets/brand-original.webp" width="1050" height="1050"/></svg><svg class="wordmark wordmark-ar" viewBox="190 178 680 422"><image href="/assets/brand-original.webp" width="1050" height="1050"/></svg></span></a><div class="navlinks" id="navlinks"><a href="/">الرئيسية</a><a href="/about">من نحن</a><a href="/services">الخدمات</a><a href="/products">المنتجات</a><a href="/ar/academy">الأكاديمية</a><a href="/initiatives">المبادرات</a><a href="/projects">المشاريع</a></div><div class="nav-actions"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="تفعيل الوضع الفاتح" aria-pressed="true">☀</button><a class="lang" href="/academy" lang="en" hreflang="en">English</a><a class="nav-cta" href="/#contact">لنتحدث ↗</a><button class="menu" id="menu-toggle" type="button" aria-label="فتح القائمة" aria-controls="navlinks" aria-expanded="false">☰</button></div></nav></header>
 <main id="main">
   <section class="page-intro wrap"><p class="eyebrow">تعلّم بالممارسة</p><h1>ورش ودورات الذكاء الاصطناعي والبرمجة في القاهرة</h1><p class="lead">تجارب تعلم عملية تراعي العمر والدور والخبرة، وتساعد المشاركين على اكتساب المهارات من خلال التطبيق.</p></section>
   <section class="catalog-section wrap"><div class="section-heading"><h2>برامج وورش لمختلف الفئات</h2><p>نناقش احتياج الفئة المستهدفة ونصمم مسار التعلم المناسب.</p></div><div class="catalog-grid">
@@ -32,7 +34,8 @@
   <section class="catalog-section wrap"><div class="section-heading"><h2>اسأل عن ورشة مناسبة</h2><p>المواعيد والتفاصيل تُحدد عند مناقشة متطلبات المجموعة أو المؤسسة.</p></div><a class="btn" href="https://wa.me/201026655008?text=مرحباً%20ذكاء،%20أرغب%20في%20الاستفسار%20عن%20ورش%20التدريب">استفسر عن التدريب ↗</a></section>
   <section class="contact-band"><div class="wrap contact-inner"><div><p class="eyebrow">تدريب للأفراد والمؤسسات</p><h2>ما المهارة التي تريد تطويرها؟</h2><p>أرسل الفئة المستهدفة وموضوع التدريب لمناقشة المسار الأنسب.</p></div><div class="contact-links"><a class="btn" href="https://wa.me/201026655008">تواصل عبر واتساب ↗</a><a dir="ltr" href="tel:+201026655008">+20 102 665 5008</a><a href="mailto:Hello@Zakaa-AI.net">Hello@Zakaa-AI.net</a></div></div></section>
 </main>
-<footer class="site-footer"><div class="wrap"><div class="footer-links"><a href="/ar/">الرئيسية</a><a href="/ar/ai-software">الذكاء الاصطناعي والبرمجيات</a><a href="/ar/erp360">ERP360</a><a href="mailto:Hello@Zakaa-AI.net">تواصل مع ذكاء</a></div><p>© ZAKAA · ذكاء يصنع الفرق.</p></div></footer>
+<footer class="site-footer"><div class="wrap"><div class="footer-links"><a href="/">الرئيسية</a><a href="/ar/ai-software">الذكاء الاصطناعي والبرمجيات</a><a href="/ar/erp360">ERP360</a><a href="mailto:Hello@Zakaa-AI.net">تواصل مع ذكاء</a></div><p>© ZAKAA · ذكاء يصنع الفرق.</p></div></footer>
 <script>document.getElementById('menu-toggle').addEventListener('click',function(){const open=this.getAttribute('aria-expanded')!=='true';this.setAttribute('aria-expanded',String(open));document.getElementById('navlinks').classList.toggle('open',open);});</script>
+<script src="/assets/theme-toggle.js" defer></script>
 </body>
 </html>
