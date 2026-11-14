@@ -44,7 +44,7 @@
     });
   }
 
-  let lang = navigator.language?.startsWith('ar') ? 'ar' : 'en';
+  let lang = 'ar';
   try { const saved=localStorage.getItem('zakaa-lang'); if(['en','ar'].includes(saved))lang=saved; } catch {}
   setLanguage(lang); document.getElementById('year').textContent=new Date().getFullYear();
 })();
