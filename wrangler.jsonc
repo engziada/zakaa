@@ -17,5 +17,10 @@
   },
   "ai": {
     "binding": "AI"
+  },
+  "previews": {
+    "ai": {
+      "binding": "AI"
+    }
   }
 }
