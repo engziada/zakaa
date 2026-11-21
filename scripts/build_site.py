@@ -261,7 +261,7 @@ about_hero = f'''<section class="page-intro about-hero wrap">
   </div>
 </section>'''
 
-page('about', 'About Zaka2', 'عن ذكاء', 'Our purpose, vision, mission and approach.', 'من نحن ورؤيتنا ورسالتنا ولماذا تختار ذكاء.', about_hero + (R / 'scripts/about-template.html').read_text(encoding='utf-8'))
+page('about', 'About us', 'عن ذكاء', 'Our purpose, vision, mission and approach.', 'من نحن ورؤيتنا ورسالتنا ولماذا تختار ذكاء.', about_hero + (R / 'scripts/about-template.html').read_text(encoding='utf-8'))
 
 # ==============================================================================
 # REDESIGNED /PRODUCTS HUB: COMMAND CENTER & SPECIFICATION MATRIX
