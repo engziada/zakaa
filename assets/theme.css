@@ -1486,3 +1486,9 @@ html[dir='rtl'] .eyebrow { letter-spacing: 0; }
 @media (max-width: 760px) {
   .about-hero-stage.hero-art { height: min(84vw, 340px); }
 }
+
+/* Randomized hero card pool */
+.product-preview[hidden] { display: none; }
+.preview-card-link { display: block; color: inherit; text-decoration: none; }
+.preview-bottom .preview-link { color: var(--copper); }
+.preview-card-link:hover .preview-link { text-decoration: underline; text-underline-offset: 3px; }
